@@ -51,8 +51,8 @@ segments: '''.format(min, max)
     sequence = min - iteration
     for line in fhandler.readlines():
         sequence += iteration
-        print("  -from: {}".format(sequence))
-        print("    color: {}".format(line), end='')
+        print("  - from: {}".format(sequence))
+        print("    color: '{}'".format(line.rstrip()))
 
 
 if __name__ == "__main__":
